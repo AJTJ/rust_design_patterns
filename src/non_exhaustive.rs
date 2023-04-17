@@ -16,7 +16,7 @@ mod MyMod {
 }
 
 pub fn print_matched_variants(s: MyMod::S) {
-    let a::S { foo: the_foo } = s;
+    let MyMod::S { foo: the_foo } = s;
 
     let some_enum = MyMod::AdmintMoreVariants::VarA;
 
