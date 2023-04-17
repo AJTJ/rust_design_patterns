@@ -5,7 +5,7 @@ mod MyMod {
     }
 
     #[non_exhaustive]
-    pub enum AdmintMoreVariants {
+    pub enum AdmitMoreVariants {
         VarA,
         VarB,
         #[non_exhaustive]
@@ -18,11 +18,11 @@ mod MyMod {
 pub fn print_matched_variants(s: MyMod::S) {
     let MyMod::S { foo: the_foo } = s;
 
-    let some_enum = MyMod::AdmintMoreVariants::VarA;
+    let some_enum = MyMod::AdmitMoreVariants::VarA;
 
     match some_enum {
-        MyMod::AdmintMoreVariants::VarA => println!("is A"),
-        MyMod::AdmintMoreVariants::VarB => println!("is B"),
-        MyMod::AdmintMoreVariants::VarC { a } => println!("is C"),
+        MyMod::AdmitMoreVariants::VarA => println!("is A"),
+        MyMod::AdmitMoreVariants::VarB => println!("is B"),
+        MyMod::AdmitMoreVariants::VarC { a } => println!("is C"),
     }
 }
