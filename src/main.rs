@@ -7,6 +7,5 @@ fn main() {
     // iterate_option::it_op();
     // temporary_mutability::sorted_vec();
     idioms::ret_consumed_arg_on_error::returned_error();
-
-    
+    design_patterns::behavior_command::use_schema();
 }
